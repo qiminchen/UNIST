@@ -13,7 +13,9 @@ conda env create -f environment.yml
 ```
 Our code has been tested with Python 3.6, Pytorch 1.6.0, CUDA 10.1 and cuDNN 7.0 on Ubuntu 18.04.
 
-## Datasets and pre-trained weights
+## Datasets
+
+Datasets will be available soon.
 
 ## Usage
 We provide instructions for training and testing 2D translation on `A-H` dataset and 3D translations on `chair-table` dataset, below instruction works for other domain pairs.
