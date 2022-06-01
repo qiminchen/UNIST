@@ -1,0 +1,1 @@
+python run_2dae.py --train --epoch 800 --dataset A-H --sample_im_size 128

@@ -1,0 +1,1 @@
+python run_3dgridtranslator.py --train --epoch 4800 --dataset chair-table --batch_size 128

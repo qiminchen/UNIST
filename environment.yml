@@ -1,0 +1,22 @@
+name: unist
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - pip=21.0.1
+  - pytorch=1.6.0
+  - torchvision=0.7.0
+  - cudatoolkit=10.1
+  - pillow=8.1.2
+  - notebook
+  - matplotlib
+  - pip:
+      - scikit-learn==0.24.1
+      - scipy==1.5.4
+      - h5py==3.1.0
+      - numpy==1.19.5
+      - pymcubes==0.1.2
+      - tqdm==4.62.0
+

@@ -1,0 +1,1 @@
+python run_ae.py --train --epoch 300 --dataset chair-table --sample_vox_size 16
