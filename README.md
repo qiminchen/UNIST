@@ -72,9 +72,9 @@ python run_3dgridtranslator.py --dataset chair-table --sample_dir outputs
 ## Citation
 Please cite our paper if you find this code or research relevant:
 
-      @article{chen2021unist,
+      @inproceedings{chen2022unist,
         title={UNIST: Unpaired Neural Implicit Shape Translation Network},
         author={Chen, Qimin and Merz, Johannes and Sanghi, Aditya and Shayani, Hooman and Mahdavi-Amiri, Ali and Zhang, Hao},
-        journal={arXiv preprint arXiv:2112.05381},
-        year={2021}
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        year={2022}
       }
