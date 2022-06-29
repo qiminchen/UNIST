@@ -15,7 +15,7 @@ Our code has been tested with Python 3.6, Pytorch 1.6.0, CUDA 10.1 and cuDNN 7.0
 
 ## Datasets
 
-Datasets will be available soon.
+Datasets can be found [here](https://drive.google.com/drive/folders/1ARC5NBTS3fWoGNo4YxkbUSrOPssU23Ei?usp=sharing).
 
 ## Usage
 We provide instructions for training and testing 2D translation on `A-H` dataset and 3D translations on `chair-table` dataset, below instruction works for other domain pairs.
