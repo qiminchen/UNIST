@@ -22,12 +22,27 @@ Datasets can be found [here](https://drive.google.com/drive/folders/1ARC5NBTS3fW
 ```
 [key] - [description]
 file_names - file name of each image
-pixels - image in gray scale
+pixels - image in gray scale, (num_image, 256, 256)
 points_128 - query points, (num_image, 16384, 2)
 values_128 - inside / outside values of query points, (num_image, 16384, 1)
 # Note that we don't employ progressive training in 2D experiments so you can ignore points_64 and values_64
 ```
 We provide code of sampling query points **near/inside/outside** boundary with a ratio of `3:2:1` from a `256x256` image in `sampling.py`, you can adjust accordingly.
+
+### 3D dataset
+```
+[key] - [description]
+file_names - file name of each shape, (num_shape, 1)
+pixels - image in gray scale, (num_shape, 24, 137, 137), not used
+voxels - input voxel of each shape, (num_shape, 64, 64, 64, 1)
+points_16 - query points sampled from 16^3 voxel, (num_shape, 4096, 3)
+values_16 - inside / outside values of query points, (num_shape, 4096, 1)
+points_32 - query points sampled from 32^3 voxel, (num_shape, 4096, 3)
+values_32 - inside / outside values of query points, (num_shape, 4096, 1)
+points_64 - query points sampled from 64^3 voxel, (num_shape, 16384, 3)
+values_64 - inside / outside values of query points, (num_shape, 16384, 1)
+```
+Please refer to [IM-NET](https://github.com/czq142857/IM-NET/tree/master/point_sampling) for detailed sampleing code. Sampling code is verified and can be readily use by simply changing the path.
 
 ## Usage
 We provide instructions for training and testing 2D translation on `A-H` dataset and 3D translations on `chair-table` dataset, below instruction works for other domain pairs.
