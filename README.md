@@ -15,7 +15,19 @@ Our code has been tested with Python 3.6, Pytorch 1.6.0, CUDA 10.1 and cuDNN 7.0
 
 ## Datasets
 
-Datasets can be found [here](https://drive.google.com/drive/folders/1ARC5NBTS3fWoGNo4YxkbUSrOPssU23Ei?usp=sharing).
+Datasets can be found [here](https://drive.google.com/drive/folders/1ARC5NBTS3fWoGNo4YxkbUSrOPssU23Ei?usp=sharing). Description of each key in `hdf5` file can be found below. For custom datasets, please follow the below steps for preparation.
+
+### 2D dataset
+
+```
+[key] - [description]
+file_names - file name of each image
+pixels - image in gray scale
+points_128 - query points, (num_image, 16384, 2)
+values_128 - inside / outside values of query points, (num_image, 16384, 1)
+# Note that we don't employ progressive training in 2D experiments so you can ignore points_64 and values_64
+```
+We provide code of sampling query points **near/inside/outside** boundary with a ratio of `3:2:1` from a `256x256` image in `sampling.py`, you can adjust accordingly.
 
 ## Usage
 We provide instructions for training and testing 2D translation on `A-H` dataset and 3D translations on `chair-table` dataset, below instruction works for other domain pairs.
