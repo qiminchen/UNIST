@@ -15,7 +15,7 @@ Our code has been tested with Python 3.6, Pytorch 1.6.0, CUDA 10.1 and cuDNN 7.0
 
 ## Datasets
 
-Datasets can be found [here](https://drive.google.com/drive/folders/1ARC5NBTS3fWoGNo4YxkbUSrOPssU23Ei?usp=sharing). Description of each key in `hdf5` file can be found below. For custom datasets, please follow the below steps for preparation.
+Datasets and model weights can be found [here](https://drive.google.com/drive/folders/1ARC5NBTS3fWoGNo4YxkbUSrOPssU23Ei?usp=sharing). Description of each key in `hdf5` file can be found below. For custom datasets, please follow the below steps for preparation.
 
 ### 2D dataset
 
